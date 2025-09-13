@@ -9,13 +9,23 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  apiKey:
+    process.env.NEXT_PUBLIC_FIREBASE_API_KEY ||
+    "AIzaSyA0LlfrkFtQRgRMyP3AkX3fhut3hS-GlYQ",
+  authDomain:
+    process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN ||
+    "prepwise-cf4f9.firebaseapp.com",
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "prepwise-cf4f9",
+  storageBucket:
+    process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET ||
+    "prepwise-cf4f9.firebasestorage.app",
+  messagingSenderId:
+    process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "400323635216",
+  appId:
+    process.env.NEXT_PUBLIC_FIREBASE_APP_ID ||
+    "1:400323635216:web:94f80600c31cf452c54295",
+  measurementId:
+    process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID || "G-2V59522JMR",
 };
 
 // Initialize Firebase
